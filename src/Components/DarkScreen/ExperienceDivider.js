@@ -5,8 +5,9 @@ export default function Divider(props) {
     return (
         <Wrapper>
             <DividerContainer>
-            <Header>Meet<span>BJ</span></Header>
             <hr/>
+            <Header><span>EX</span>perience</Header>
+            
             </DividerContainer>
         </Wrapper>
     )
