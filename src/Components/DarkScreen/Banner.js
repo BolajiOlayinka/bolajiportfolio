@@ -37,9 +37,8 @@ const Wrapper = styled.div`
   background-size:cover;
   background-color:var(--deepBlue);
 padding-top:50px;
-@media(max-width:1024px){
-    width:90%;
-    margin:auto;
+@media(max-width:576px){
+padding-top:80px;
 }
   
 `;
@@ -49,12 +48,25 @@ const Container = styled.div`
     width: 1000px;
     margin: auto;
   }
+  @media(max-width:1199px){
+      width:90%;
+      margin:auto;
+  }
 `;
 const BannerContent = styled.div`
   display: flex;
   height:600px;
   align-items:center;
   justify-content:space-around;
+  @media(max-width:1024px){
+      justify-content:space-between;
+  }
+  @media(max-width:576px){
+    height:500px;
+  }
+  @media(max-width:426px){
+    height:380px;
+  }
 `;
 const BannerRight = styled.div`
 width:350px;
@@ -66,14 +78,19 @@ text-align:center;
 const BannerLeft = styled.div`
 width:700px;
 @media(max-width:768px){
+    width:100%;
+    margin:auto;
+}
+@media(max-width:426px){
     width:90%;
     margin:auto;
 }
+
 `;
 const PreHeader = styled.div`
   font-size: 16px;
   color:white;
-  @media(max-width:426px){
+  @media(max-width:576px){
       font-size:14px;
   }
 `;
@@ -95,7 +112,7 @@ font-size:16px;
 line-height:32px;
 color:white;
 margin-bottom:30px;
-@media(max-width:426px){
+@media(max-width:576px){
       font-size:14px;
       margin-bottom:15px;
   }

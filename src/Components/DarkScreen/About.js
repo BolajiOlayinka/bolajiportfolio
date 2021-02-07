@@ -49,7 +49,22 @@ const unDim = ()=>{
                         <li>Facebook SDK</li>
                         
                     </ul>
+                    <SmallAboutPix>
+                    <BackgroundTwo>
+
+</BackgroundTwo>
+<BackgroundOne>
+
+</BackgroundOne>
+
+<ImageSection onMouseEnter={Dim} onMouseLeave={unDim} >
+<BackgroundOverlay overlay={overlay}/>
+<img src={Picture} alt="Bolaji Olayinka"/>
+</ImageSection>
+                    </SmallAboutPix>
                     </TechStack>
+
+
                 </AboutBody>
                 <AboutPix>
                
@@ -76,13 +91,16 @@ width:100%;
 @media(min-width:1200px){
     width:1000px;
     margin:auto;
-}
+}@media(max-width:1199px){
+      width:90%;
+      margin:auto;
+  }
 @media(max-width:1024px){
     width:90%;
     margin:auto;
 }
 @media(max-width:576px){
-    width:80%;
+    width:90%;
     margin:auto;
 }
 `
@@ -90,6 +108,11 @@ const Wrapper =styled.div `
 display:flex;
 padding-top:80px;
 padding-bottom:80px;
+@media(max-width:577px){
+    padding-top:30px;
+    padding-bottom:30px;
+    flex-direction:column;
+}
 `
 const BackgroundOverlay = styled.div`	
   background:${(props) => props.overlay} !important;
@@ -102,6 +125,13 @@ const BackgroundOverlay = styled.div`
   right: 0;	
   z-index:4;
   margin:auto;
+  @media(max-width:577px){
+    width:100px;
+  }
+  @media(max-width:426px){
+      width:250px;
+      width:250px;
+  }
 `;
 const AboutBody = styled.div `
 width:580px;
@@ -117,6 +147,19 @@ div{
     display:flex;
     align-items:center;
 }
+@media(max-width:1024px){
+    width:530px;
+}
+@media(max-width:991px){
+    width:100%;
+}
+@media(max-width:577px){
+    font-size:14px;
+}
+@media(max-width:426px){
+    width:90%;
+    margin:auto;
+}
 `
 const ToolBoxIcon = styled(FontAwesomeIcon)`
 margin-right:10px;
@@ -126,6 +169,31 @@ const AboutPix = styled.div `
 width:350px;
 margin-top:5px;
 text-align:center;
+
+@media(max-width:991.1px){
+    display:none;
+}
+@media(max-width:426px){
+    width:250px;
+    padding-top:20px;
+    padding-bottom:20px;
+    display:block;
+    margin:auto;
+}
+`
+const SmallAboutPix = styled.div `
+width:350px;
+text-align:center;
+justify-content:center;
+@media(min-width:991px){
+    display:none!important;
+}
+@media(max-width:577px){
+    width:200px;
+}
+@media(max-width:426px){
+    display:none!important;
+}
 
 `
 const ImageSection = styled.div `
@@ -137,6 +205,21 @@ img{
     position:relative;
     z-index:2;
 }
+@media(max-width:577px){
+    width:100px;
+
+  img{
+      width:100px;
+  }
+}
+@media(max-width:426px){
+    width:250px;
+    
+  img{
+      width:250px;
+     
+  }
+}
 `
 const BackgroundOne = styled.div `
 position:absolute;
@@ -147,6 +230,20 @@ z-index:0;
 margin-left:95px;
 margin-top:-5px;
 border-radius:0px 10px 0px 10px;
+@media(max-width:991px){
+    margin-left:-5px;
+    margin-top:10px;
+}
+@media(max-width:577px){
+    width:100px;
+    height:100px;
+}
+@media(max-width:426px){
+    width:250px;
+    height:250px;
+    margin-top:5px;
+    margin-left:-5px;
+}
 `
 const BackgroundTwo =styled.div `
 position:absolute;
@@ -156,6 +253,19 @@ height:155px;
 z-index:1;
 margin-left:100px;
 border-radius:0px 10px 0px 10px;
+@media(max-width:991px){
+    margin-left:5px;
+}
+@media(max-width:577px){
+    width:100px;
+    height:100px;
+}
+@media(max-width:426px){
+    width:250px;
+    height:250px;
+    margin-left:5px;
+    margin-top:-5px;
+}
 `
 const TechStack = styled.div `
 width:500px;
@@ -174,6 +284,21 @@ li{
     width:150px;
 }
 
-
+@media(max-width:991px){
+    width:100%;
+    li{
+        width:135px;
+    }
+}
+@media(max-width:577px){
+    align-items:Center;
+    ul{
+        font-size:12px;
+    }
+    li{
+        width:120px;
+        padding-top:5px;
+    }
+}
 `
 
