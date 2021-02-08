@@ -179,7 +179,7 @@ export default function Experience() {
             <RenderTwo>
             <ul>               
             <li>Marketing Data Automation Using Facebook SDK</li>
-               <li>Building Front End Applications for e-commerce</li>
+               <li>Used the Liquid Templating Language to develop on Shopify</li>
                </ul>
 
               </RenderTwo>

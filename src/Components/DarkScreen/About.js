@@ -46,8 +46,12 @@ const unDim = ()=>{
                         <li>Liquid</li>
                         <li>Express</li>
                         <li>Mongo DB</li>
+                       
+                        <li>Liquid</li>
+                        <li>Shopify</li>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
                         <li>Facebook SDK</li>
-                        
                     </ul>
                     <SmallAboutPix>
                     <BackgroundTwo>
