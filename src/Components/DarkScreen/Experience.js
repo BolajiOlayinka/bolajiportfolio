@@ -210,13 +210,8 @@ export default function Experience() {
               </RenderFour>
               </DetailsRender>
               </DetailsWrapper>
- 
           )}
-              
-              
-             
-              
-         
+
         </RightWrapper>
       </Wrapper>
     </Container>
@@ -307,7 +302,9 @@ const CardOne = styled.div`
   border-left: ${(props) => props.progressColor} !important;
   margin-left: -13px;
   justify-content: space-around;
-
+:hover{
+  cursor:pointer
+}
   @media(max-width:1024px){
     width:530px;
 }
@@ -341,6 +338,9 @@ const CardTwo = styled.div`
   justify-content: space-around;
   margin-top: 8px;
   margin-bottom: 8px;
+  :hover{
+  cursor:pointer
+}
   @media(max-width:1024px){
     width:530px;
 }
@@ -371,6 +371,9 @@ const CardThree = styled.div`
   border-left: ${(props) => props.progressColor} !important;
   margin-left: -13px;
   justify-content: space-around;
+  :hover{
+  cursor:pointer
+}
   @media(max-width:1024px){
     width:530px;
 }
@@ -404,6 +407,9 @@ const CardFour = styled.div`
   margin-left: -13px;
   justify-content: space-around;
   margin-top: 8px;
+  :hover{
+  cursor:pointer
+}
   @media(max-width:1024px){
     width:530px;
 }
