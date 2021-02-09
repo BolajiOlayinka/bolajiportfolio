@@ -192,7 +192,7 @@ export default function Experience() {
             <DetailsRender>
             <RenderThree>
             <ul>               
-            <li>Front End Application for Ecommerce/Logistics Platform</li>
+            <li>Front End Application for Ecommerce / Logistics Platform</li>
             </ul>
 
               </RenderThree>
@@ -265,7 +265,7 @@ const Wrapper = styled.div`
   display: flex;
   padding-top: 80px;
   padding-bottom: 80px;
-  @media (max-width: 577px) {
+  @media (max-width: 991px) {
     padding-top: 30px;
     padding-bottom: 30px;
     flex-direction: column;
@@ -274,8 +274,20 @@ const Wrapper = styled.div`
 const LeftWrapper = styled.div`
   border-left: 1px solid #eaeaea;
   padding-left: 10px;
+  @media(max-width:577px){
+    width:100%;
+    margin-left:10px;
+
+  }
 `;
-const RightWrapper = styled.div``;
+const RightWrapper = styled.div`
+@media(max-width:991px){
+  display:flex;
+  flex-direction:row;
+  width:80%;
+  margin:auto;
+}
+`;
 const AboutPix = styled.div`
   width: 350px;
   margin-top: 5px;
@@ -284,27 +296,43 @@ const AboutPix = styled.div`
   @media (max-width: 991.1px) {
     display: none;
   }
-  @media (max-width: 426px) {
-    width: 250px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: block;
-    margin: auto;
-  }
+  
 `;
 const CardOne = styled.div`
   display: flex;
-  width: 630px;
+  width:580px;
   height: 86px;
   align-items: center;
   background-color: ${(props) => props.cardColor} !important;
   border-left: ${(props) => props.progressColor} !important;
   margin-left: -13px;
   justify-content: space-around;
+
+  @media(max-width:1024px){
+    width:530px;
+}
+@media(max-width:991px){
+    width:100%;
+}
+@media(max-width:577px){
+    font-size:14px;
+    flex-direction:column;
+   width:100%;
+    height:90px;
+    padding-top:5px;
+    padding-bottom:5px;
+   
+}
+@media(max-width:426px){
+  width:100%;
+  
+}
+
+
 `;
 const CardTwo = styled.div`
   display: flex;
-  width: 630px;
+  width:580px;
   height: 86px;
   align-items: center;
   background-color: ${(props) => props.cardColor} !important;
@@ -313,20 +341,62 @@ const CardTwo = styled.div`
   justify-content: space-around;
   margin-top: 8px;
   margin-bottom: 8px;
+  @media(max-width:1024px){
+    width:530px;
+}
+@media(max-width:991px){
+    width:100%;
+}
+@media(max-width:577px){
+    font-size:14px;
+    flex-direction:column;
+    margin-top:10px;
+    height:80px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+@media(max-width:426px){
+  width:100%;
+  
+}
+
 `;
 const CardThree = styled.div`
   display: flex;
-  width: 630px;
+  width:580px;
   height: 86px;
   align-items: center;
   background-color: ${(props) => props.cardColor} !important;
   border-left: ${(props) => props.progressColor} !important;
   margin-left: -13px;
   justify-content: space-around;
+  @media(max-width:1024px){
+    width:530px;
+}
+@media(max-width:991px){
+    width:100%;
+}
+@media(max-width:577px){
+    font-size:14px;
+    flex-direction:column;
+    margin-top:10px;
+    height:80px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+@media(max-width:426px){
+  width:100%;
+  
+}
+@media(max-width:426px){
+  width:100%;
+}
 `;
 const CardFour = styled.div`
   display: flex;
-  width: 630px;
+  width:580px;
   height: 86px;
   align-items: center;
   background-color: ${(props) => props.cardColor} !important;
@@ -334,46 +404,96 @@ const CardFour = styled.div`
   margin-left: -13px;
   justify-content: space-around;
   margin-top: 8px;
+  @media(max-width:1024px){
+    width:530px;
+}
+@media(max-width:991px){
+    width:100%;
+}
+@media(max-width:768px){
+    font-size:14px;
+}
+@media(max-width:577px){
+    font-size:14px;
+    flex-direction:column;
+    height:80px;
+    margin-top:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+@media(max-width:426px){
+  width:100%;
+  
+}
+@media(max-width:426px){
+    width:100%;
+    
+}
 `;
 const Name = styled.div`
   color: ${(props) => props.nameColor} !important;
   font-size: 18px;
   width: 40%;
   padding-left: 30px;
+  @media(max-width:576px){
+    width:100%;
+    font-size:16px;
+  }
+
 `;
 const PositionWrapper = styled.div`
   line-height: 20px;
-  width: 60%;
-  margin: auto;
-  text-aling: center;
+  
+  @media(min-width:577px){
+    margin:auto;
+    width:50%;
+  }
+ 
+  
+  @media(max-width:576px){
+    font-size:18px;
+    padding-left:10px;
+    width:100%;
+    padding-left: 30px;
+    ${'' /* margin-top:5px; */}
+    line-height:normal;
+    
+  }
+
+
+  ${'' /* text-aling: center; */}
+
 `;
 const Position = styled.div`
   font-size: 20px;
   color: white;
-  width: 60%;
   margin: auto;
   padding-bottom: 10px;
+  
+  @media(max-width:768px){
+    width: 100%;
+  }
+  @media(max-width:576px){
+    width:100%;
+    font-size:16px;
+    padding-bottom:0px;
+  }
+  @media(max-width:426px){
+    font-size:18px;
+
+  }
 `;
 const Year = styled.div`
   color: #707070;
   font-size: 14px;
-  width: 60%;
+  
   margin: auto;
 `;
 
 const SmallAboutPix = styled.div`
-  width: 350px;
-  text-align: center;
-  justify-content: center;
-  @media (min-width: 991px) {
-    display: none !important;
-  }
-  @media (max-width: 577px) {
-    width: 200px;
-  }
-  @media (max-width: 426px) {
-    display: none !important;
-  }
+ display:none;
+  
 `;
 const ImageSection = styled.div`
   position: relative;
@@ -448,6 +568,10 @@ const BackgroundTwo = styled.div`
 
 const DetailsWrapper = styled.div `
 margin-top:35px;
+@media(max-width:991px){
+  margin:auto;
+  margin-top:35px;
+}
 `
 
 const DetailsRender = styled.div `
@@ -471,6 +595,9 @@ margin:auto;
       line-height:24px;
       letter-spacing:1px;
     }
+    @media(max-width:991px){
+  max-width:400px;
+}
 `
 const RenderOne= styled.div `
 color:white;
