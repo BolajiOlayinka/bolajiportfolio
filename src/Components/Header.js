@@ -16,8 +16,7 @@ export default function Header() {
 
   const [showIcon, setShowIcon] = useState(true);
   const [showItem, setShowItem] = useState(false);
-  // const [SmallBackground, setSmallBackground]=useState("black")
-// console.log(window.innerWidth)
+  
   const handleScroll = () => {
     if (window.pageYOffset > 0) {
       setBackground("#010B30");

@@ -5,6 +5,8 @@ import ExDivider from './ExperienceDivider';
 import About from './About';
 import Experience from './Experience';
 import ProjectDivider from './ProjectDivider';
+import Projects from './Projects';
+
 export default function DarkScreen(props) {
     return (
         <React.Fragment>
@@ -14,6 +16,7 @@ export default function DarkScreen(props) {
             <ExDivider/>
             <Experience/>
             <ProjectDivider/>
+            <Projects/>
         </React.Fragment>
     )
 }
