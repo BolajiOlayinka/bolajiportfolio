@@ -31,7 +31,7 @@ const Container = styled.div`
     margin: auto;
   }
   @media (max-width: 576px) {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 `;
@@ -42,4 +42,12 @@ const FooterContainer = styled.div`
   align-items: center;
   font-size: 12px;
   height: 80px;
+  @media(max-width:576px){
+      font-size:12px;
+  }
+  @media(max-width:426px){
+      font-size:12px;
+      flex-direction:column;
+      justify-content:space-around;
+  }
 `;

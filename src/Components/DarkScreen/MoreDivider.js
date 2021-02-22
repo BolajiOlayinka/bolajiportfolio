@@ -6,7 +6,7 @@ export default function Divider(props) {
         <Wrapper>
             <DividerContainer>
             <hr/>
-            <Header><span>More</span>Projects</Header>
+            <Header><span>More</span>PROJECTS</Header>
             
             </DividerContainer>
         </Wrapper>
@@ -25,6 +25,18 @@ justify-content:center;
 align-items:center;
 width:800px;
 margin:auto;
+@media(max-width:1024px){
+    width:80%;
+    margin:auto;
+}
+@media(max-width:768px){
+    width:80%;
+    margin:auto;
+}
+@media(max-width:426px){
+    width:200px;
+    margin:auto;
+}
 hr{
 border:1px solid #eaeaea;
 width:80%;
@@ -45,14 +57,7 @@ width:80%;
     margin:auto;
 }
 }
-@media(max-width:1024px){
-    width:80%;
-    margin:auto;
-}
-@media(max-width:768px){
-    width:80%;
-    margin:auto;
-}
+
 
 `
 const Header = styled.div `

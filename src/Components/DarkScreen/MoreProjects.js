@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BG from '../../assets/QR.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faStar, faWater } from "@fortawesome/free-solid-svg-icons";
 // import {faInstagram, faMedium, faLinkedin, faTwitter, faWhatsapp , faFacebook, faYoutube} from "@fortawesome/free-brands-svg-icons";
 // import { Link } from "react-router-dom";
 
@@ -40,7 +40,8 @@ export default function MoreProjects() {
                                 <FontAwesomeIcon icon = {faCode} />
                             </Icons> 
                             <Icons>
-                            <FontAwesomeIcon icon = {faCode} />
+                            <FontAwesomeIcon icon = {faWater} />
+                            {/* <FontAwesomeIcon icon = {faWater} /> */}
                             </Icons>
                             
                         </Header>
@@ -136,9 +137,14 @@ const Header = styled.div `
 height:50px;
 display:flex;
 justify-content:space-between;
+align-items:center;
 `
 const Icons = styled.div `
-color:var(--royalBlue);
+color:var(--cyan);
+font-size:24px;
+:last-child{
+font-size:16px;
+}
 `
 const Title = styled.div `
 font-size:18px;
