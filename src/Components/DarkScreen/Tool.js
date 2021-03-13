@@ -128,9 +128,12 @@ const Container = styled.div`
     width: 90%;
     margin: auto;
   }
-
+  @media (max-width: 991px) {
+    width: 100%;
+    margin: auto;
+  }
   @media (max-width: 576px) {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
 `;
@@ -139,7 +142,10 @@ const RightUp = keyframes`
  from {bottom:0px;}
   to {bottom: 300px;}
 
-
+@media(max-width:426px){
+  from {bottom:0px;}
+  to {bottom: 900px;}
+}
 `;
 const PartnerContainer = styled.div`
   width: 100%;
@@ -164,29 +170,32 @@ const PartnerContainer = styled.div`
   }
   @media (max-width: 991px) {
     justify-content:space-between;
-    width:100%;
-    height: 500px;
+    width:760px;
+    margin:auto;
+    height: 600px;
   }
   @media (max-width: 768px) {
     justify-content:space-between;
-    width:100%;
-    height: 650px;
+    width:570px;
+    margin:auto;
+    height: 680px;
   }
   @media(max-width:576px) {
     justify-content:space-between;
-    width:100%;
-
-    height: 750px;
+    width:410px;
+    margin:auto;
+    height: 790px;
     position: relative;
   }
 
-  @media(max-width:500px) {
-    justify-content:center;
+  @media(max-width:426px) {
+    justify-content:space-around;
     align-items:center;
-    width:330px;
+    width:350px;
     margin:auto;
-    height: 850px;
+    height: 1400px;
     position: relative;
+    animation-duration: 25s;
   }
 `;
 const PartnerWrapper = styled.div`
@@ -210,5 +219,9 @@ const LogoContainer = styled.div`
   }
   @media (max-width: 1024px) {
     width: 130px;
+  }
+  @media (max-width: 426px) {
+    width: 150px;
+    height: 70px;
   }
 `;

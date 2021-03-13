@@ -45,6 +45,9 @@ const FooterContainer = styled.div`
   height: 80px;
   @media(max-width:576px){
       font-size:12px;
+      div:first-child{
+        display:none;
+      }
   }
   @media(max-width:426px){
       font-size:12px;

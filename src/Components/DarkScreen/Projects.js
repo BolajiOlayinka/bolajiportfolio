@@ -5,9 +5,6 @@ import Nodomaru from '../../assets/Nodomaru.png';
 import Digitrad from '../../assets/Digitrad.png';
 import Content from '../../assets/Content.png';
 import BG from '../../assets/bg.png';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars } from "@fortawesome/free-solid-svg-icons";
-// import {faGithub, faInstagram, faMedium, faLinkedin, faTwitter, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
     return (
