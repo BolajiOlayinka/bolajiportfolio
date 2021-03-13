@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Navbar, Nav, NavItem } from "reactstrap";
 import Icon from "../assets/icon2.jpg";
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import animateScrollTo from "animated-scroll-to";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faInstagram, faLinkedin, faTwitter, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import CV from '../assets/resume.pdf'
 
 
 export default function Header() {
@@ -153,11 +154,8 @@ export default function Header() {
               <StyledLink to='#'>Articles</StyledLink>
             </StyledNavItem>
             <NavItem>
-          <Resume href="/">
-          
-       
-          Resume
-                  
+          <Resume href={CV} download="resume.pdf">
+          Resume        
           </Resume>
           </NavItem>
           </StyledNav>
@@ -201,7 +199,7 @@ const LogoContainer = styled.div`
 `;
 const IconsContainer = styled.div `
 display:flex;
-width:192px;
+width:140px;
 justify-content:space-around;
 margin-left:15px;
 `
@@ -236,7 +234,7 @@ const StyledNavbar = styled(Navbar)`
   flex: auto;
   @media (min-width: 1201px) {
     flex: none;
-    width: 1200px;
+    width: 1000px;
     margin: auto;
     padding-left: 0px;
   }
@@ -245,8 +243,8 @@ const StyledNavbar = styled(Navbar)`
     padding-right: 15px;
   }
   @media (min-width: 768px) and (max-width: 1023.9px) {
-    padding-left: 50px;
-    padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
   }
   @media (max-width: 767.9px) {
     padding-left: 30px;
@@ -262,7 +260,7 @@ const StyledLink = styled(Link)`
   line-height: 24px;
   padding-bottom: 8px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   padding-left:3px;
   margin-right: 38px;
   :hover {
@@ -296,7 +294,7 @@ const StyledLink = styled(Link)`
     }
   }
 `;
-const Resume = styled.a `
+const Resume = styled.a`
 color:var(--royalBlue);
 border:1px solid var(--royalBlue);
 background:transparent;
