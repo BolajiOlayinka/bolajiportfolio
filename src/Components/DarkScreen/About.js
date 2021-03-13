@@ -7,19 +7,12 @@ import { faToolbox } from "@fortawesome/free-solid-svg-icons";
 // import { faTools } from "@fortawesome/free-solid-svg-icons";
 export default function About() {
 const [overlay, setOverlay]= useState("transparent");
-// const [gradientOne, setGradientOne] = useState("linear-gradient(to left bottom,#00ffff, #2900ff)");
-// const [gradientTwo, setGradientTwo] = useState("linear-gradient(to left bottom, #ff0000, #0000ff)")
 const Dim = ()=>{
     setOverlay("#000000");
-    // setGradientOne("linear-gradient(to left bottom, red, blue");
-    // setGradientTwo("linear-gradient(to left bottom,red, blue")
-    // console.log(gradientOne)
-    // console.log(gradientTwo)
+    
 }
 const unDim = ()=>{
     setOverlay("transparent");
-    // setGradientOne("linear-gradient(to left bottom,#00ffff, #2900ff)")
-    // setGradientTwo("linear-gradient(to left bottom, #ff0000, #0000ff");
     
 }
     return (
@@ -27,13 +20,14 @@ const unDim = ()=>{
             <Wrapper>
                 <AboutBody>
                     Hello, My Name is Bolaji, My Friends call me B.j. Although i am based in Lagos (Nigeria), 
-                    My work isn't limited by space as i work with Engineers over the world. 
+                    My work isn't limited by space as i work with Teams across the world. 
                     <br/>
-                    I work on creating solutions on the internet, Although i have experience workign on the backend, 
-                    manipulating data, storing data, creating APIS, i enjoy more but creating what <span>U & I</span> see.
+                    I work on creating solutions using technologies off and on the internet. Although i have experience workign on the backend, 
+                    manipulating data, storing data, creating APIS, i enjoy more but creating what <span>U & I</span> see. 
+                    I have a knack for designs and you need to have me on your team for good UIs.
                     <br/>
-                    I create pixel perfect, scalable and highly performant products. Here are technologies i use and i have used:
-                    Skills: <br/>
+                    I create pixel perfect, scalable and highly performant products. Here are technologies i use and i have used:<br/>
+                     
                     <div><ToolBoxIcon icon={faToolbox}/> <div>Technologies / Libraries / Apis / Platforms / Tools / Storage</div></div>
                     <TechStack>
                     <ul>
@@ -280,12 +274,14 @@ ul{
     display:flex;
     flex-wrap:wrap;
     margin-left:-1em;
+    
 }
 li{
     padding-left:5px;
     padding-right:5px;
     padding-top:10px;
     width:150px;
+    
 }
 
 @media(max-width:991px){

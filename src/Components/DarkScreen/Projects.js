@@ -17,59 +17,52 @@ export default function Projects() {
        
         <ProjectOne>
             <LeftOne>
-            <a href="/">
+            <a href="https://standagelp.netlify.app/">
                 <img src={Standage} alt="Standage Website"/>
                 </a>
             </LeftOne>
             <RightOne>
                 <ProjectName href="/">Standage Official Website</ProjectName>
                 <img src={Content} alt="Background"/>
-                <TextContent> The website was built to be seamlessly interactive, 
-                intuitive and Data efficient. Written in React, the Site Synergizes 
-                a unique Cultural and Contemporary outlook.  CATCHY!</TextContent>
+                <TextContent> This official website is targeted towards Brand awareness and Brand recorgnition across countries. It aims to elaborate on the company's 
+                    products and services. </TextContent>
             </RightOne>
         </ProjectOne>
 
         <ProjectTwo>
         <LargeLeftTwo>
         <LeftTwo>
-        <ProjectNameTwo href="/">Nodomaru Official Website</ProjectNameTwo>
+        <ProjectNameTwo href="https://ndmr.co.jp/">Nodomaru Official Website</ProjectNameTwo>
         <img src={Content} alt="Background"/>
-        <TextContentTwo> The website was built to be seamlessly interactive, 
-                intuitive and Data efficient. Written in React, the Site Synergizes 
-                a unique Cultural and Contemporary outlook.  CATCHY!</TextContentTwo>
+        <TextContentTwo>A consulting and real estate company that presents the simplistic view of life, a good mental welbeing and a strong financial position. Built using React, Context Api and Wordpress Api.</TextContentTwo>
             </LeftTwo>
             </LargeLeftTwo>
             
             
             <RightTwo>
-                <a href="/">
+                <a href="https://ndmr.co.jp/">
                 <img src={Nodomaru} alt="Nodomaru Website"/>
                 </a>
             </RightTwo>
             <SmallLeftTwo>
             <LeftTwo>
-            <ProjectNameTwo href="/">Nodomaru Official Website</ProjectNameTwo>
+            <ProjectNameTwo href="https://ndmr.co.jp/">Nodomaru Official Website</ProjectNameTwo>
         <img src={Content} alt="Background"/>
-        <TextContentTwo> The website was built to be seamlessly interactive, 
-                intuitive and Data efficient. Written in React, the Site Synergizes 
-                a unique Cultural and Contemporary outlook.  CATCHY!</TextContentTwo>
+        <TextContentTwo> A consulting and real estate company that presents the simplistic view of life, a good mental welbeing and a strong financial position. Built using React, Context Api and Wordpress Api.</TextContentTwo>
                 </LeftTwo>
             </SmallLeftTwo>
         </ProjectTwo>
 
         <ProjectThree>
         <LeftOne>
-        <a href="/">
+        <a href="https://digitrad.world/">
                 <img src={Digitrad} alt="Digitrad Website"/>
                 </a>
             </LeftOne>
             <RightOne>
-            <ProjectName href="/">Digitrad Official Website</ProjectName>
+            <ProjectName href="https://digitrad.world/">Digitrad Official Website</ProjectName>
                 <img src={Content} alt="Background"/>
-                <TextContent> The website was built to be seamlessly interactive, 
-                intuitive and Data efficient. Written in React, the Site Synergizes 
-                a unique Cultural and Contemporary outlook.  CATCHY!</TextContent>
+                <TextContent>  Aims to facilitate Cross border trades and transactions. It has an in-built fiat and cryptocurrency calculator. It is also the landing page of the <a href="https://app.digitrad.world/">Digitrad</a> a cryptocurrency e-commerce website</TextContent>
             </RightOne>
             
         </ProjectThree>
