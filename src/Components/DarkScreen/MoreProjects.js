@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import BG from '../../assets/QR.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faStar, faWater } from "@fortawesome/free-solid-svg-icons";
-// import {faInstagram, faMedium, faLinkedin, faTwitter, faWhatsapp , faFacebook, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import { faFileCode, faGlobe, faStar } from "@fortawesome/free-solid-svg-icons";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 // import { Link } from "react-router-dom";
 
 export default function MoreProjects() {
@@ -14,10 +14,12 @@ export default function MoreProjects() {
                     <Project>
                         <Header>
                             <Icons>
-                                <FontAwesomeIcon icon = {faCode} />
+                                <FontAwesomeIcon icon = {faFileCode} />
                             </Icons> 
                             <Icons>
-                            <FontAwesomeIcon icon = {faCode} />
+                                <a href="https://github.com/BolajiOlayinka/Graph-Api-Automation" target='_blank' rel="noreferrer">
+                            <FontAwesomeIcon icon = {faGithub} />
+                            </a>
                             </Icons>
                             
                         </Header>
@@ -37,11 +39,12 @@ export default function MoreProjects() {
                     <Project>
                         <Header>
                             <Icons>
-                                <FontAwesomeIcon icon = {faCode} />
+                                <FontAwesomeIcon icon = {faFileCode} />
                             </Icons> 
                             <Icons>
-                            <FontAwesomeIcon icon = {faWater} />
-                            {/* <FontAwesomeIcon icon = {faWater} /> */}
+                            <a href="https://orientalselected.com/" target='_blank' rel="noreferrer">  
+                            <FontAwesomeIcon icon = {faGlobe} />
+                            </a>
                             </Icons>
                             
                         </Header>
@@ -60,10 +63,12 @@ export default function MoreProjects() {
                     <Project>
                         <Header>
                             <Icons>
-                                <FontAwesomeIcon icon = {faCode} />
+                                <FontAwesomeIcon icon = {faFileCode} />
                             </Icons> 
                             <Icons>
-                            <FontAwesomeIcon icon = {faCode} />
+                            <a href="https://github.com/BolajiOlayinka/linkminebot" target='_blank' rel="noreferrer">
+                            <FontAwesomeIcon icon = {faGithub} />
+                            </a>
                             </Icons>
                             
                         </Header>
@@ -81,7 +86,7 @@ export default function MoreProjects() {
                     </Project>
                 </Projects>
                 <View>
-                    <a href="/">View Github for More Projects</a>
+                    <a href="https://github.com/BolajiOlayinka?tab=repositories" target='_blank' rel="noreferrer">View Github for More Projects</a>
                 </View>
             </Container>
         </Wrapper>
@@ -129,6 +134,7 @@ height:380px;
 padding:30px 20px;
 background-color:#d1e6e6;
 border-radius:8px;
+box-shadow:0 0 5px rgb(41, 0, 255);
 @media(max-width:991px){
     margin-bottom:15px;
 }
@@ -142,8 +148,11 @@ align-items:center;
 const Icons = styled.div `
 color:var(--cyan);
 font-size:24px;
-:last-child{
-font-size:16px;
+a{
+    color:var(--cyan); 
+}
+a:hover{
+    color:var(--deepBlue);
 }
 `
 const Title = styled.div `

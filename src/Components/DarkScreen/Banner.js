@@ -16,9 +16,9 @@ export default function Banner() {
             <PostHeader>
               I am a software Engineer based in Lagos, Nigeria.
               i help companies across the world to build solutions on web, mobile and everything in between, 
-              i am comfortable working across all time zones. 
+              While i try to build things, sometimes i break things also, but overall I BUILD.  
             </PostHeader>
-            <Contact href="/">
+            <Contact href="/" className="about">
             Contact Me
             <FontAwesomeIcon icon={faEnvelope}/>
             </Contact>

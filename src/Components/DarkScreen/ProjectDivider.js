@@ -9,7 +9,7 @@ export default function Divider() {
             <hr/>
             
             </DividerContainer>
-            <Few>*** ( Few of the Projects I worked recently ) ***</Few>
+            <Few>*** ( Few of the Projects I worked Recently and Permitted to Share) ***</Few>
         </Wrapper>
     )
 }

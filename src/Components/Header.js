@@ -6,17 +6,22 @@ import { HashLink as Link } from "react-router-hash-link";
 import animateScrollTo from "animated-scroll-to";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import {faGithub, faInstagram, faMedium, faLinkedin, faTwitter, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faInstagram, faLinkedin, faTwitter, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 
 
 export default function Header() {
   const [background, setBackground] = useState("#010B30");
   const [boxshadow, setBoxShadow] = useState("transparent");
   const [fixed, setFixed] = useState("fixed");
-
   const [showIcon, setShowIcon] = useState(true);
   const [showItem, setShowItem] = useState(false);
   
+  const ScrollToTop =()=>{
+    animateScrollTo(0);
+  }
+
+  
+
   const handleScroll = () => {
     if (window.pageYOffset > 0) {
       setBackground("#010B30");
@@ -41,21 +46,16 @@ export default function Header() {
     setShowIcon(!showIcon, e);
   };
 
-  const ScrolltoMarketPlace = () => {
-    animateScrollTo(document.querySelector(".crossborder"));
+  const ScrolltoAbout = () => {
+    animateScrollTo(document.querySelector(".about"));
   };
-  const ScrolltoInternationalPayment = () => {
-    animateScrollTo(document.querySelector(".payment"));
+  const ScrolltoExperience = () => {
+    animateScrollTo(document.querySelector(".experience"));
   };
-  const ScrolltoLogistics = () => {
-    animateScrollTo(document.querySelector(".logistics"));
+  const ScrolltoProject = () => {
+    animateScrollTo(document.querySelector(".project"));
   };
-  // const ScrolltoLogistics = () => {
-  //   animateScrollTo(3630);
-  // };
-  const ScrolltoFinance = () => {
-    animateScrollTo(document.querySelector(".finance"));
-  };
+  
   return (
     <NavWrapper background={background} boxshadow={boxshadow} fixed={fixed}>
       <StyledNavbar expand="md">
@@ -67,19 +67,19 @@ export default function Header() {
           )}
         </div>
         <LogoContainer>
-          <Link to="/">
+          <Link to="/" onClick={ScrollToTop}>
             <img src={Icon} alt="Bolaji Olayinka" />
           </Link>
         </LogoContainer>
         <IconsContainer>
-        <a href="/">
+        <a href="https://github.com/BolajiOlayinka" target="_blank" rel="noreferrer">
         <StyledIcon icon={faGithub}/>
         </a>
-       <a href="/"><StyledIcon icon={faWhatsapp}/></a>
-       <a href="/"><StyledIcon icon={faInstagram}/></a>
-       <a href="/"><StyledIcon icon={faTwitter}/></a>
-       <a href="/"><StyledIcon icon={faLinkedin}/></a>
-        <a href="/"><StyledIcon icon={faMedium}/></a>
+       <a href="https://wa.link/8r8qy7" target="_blank" rel="noreferrer"><StyledIcon icon={faWhatsapp}/></a>
+       <a href="https://www.instagram.com/artbolajiolayinka/" target="_blank" rel="noreferrer"><StyledIcon icon={faInstagram}/></a>
+       <a href="https://twitter.com/Hewalewa" target="_blank" rel="noreferrer"><StyledIcon icon={faTwitter}/></a>
+       <a href="https://www.linkedin.com/in/bolaji-olayinka-1309aa95/" target="_blank" rel="noreferrer"><StyledIcon icon={faLinkedin}/></a>
+        
 
         </IconsContainer>
         {showItem && (
@@ -95,44 +95,43 @@ export default function Header() {
                 }}
                 to="/"
                 onClick={() => {
-                  ScrolltoMarketPlace();
+                  ScrolltoAbout();
                   toggle();
                 }}
               >
-                CROSSBORDER MARKETPLACE
+                About
               </StyledLink>
             </NavItem>
             <NavItem>
               <StyledLink
                 to="/"
                 onClick={() => {
-                  ScrolltoInternationalPayment();
+                  ScrolltoExperience();
                   toggle();
                 }}
               >
-                INTERNATIONAL PAYMENT
+                Experience
               </StyledLink>
             </NavItem>
             <NavItem>
               <StyledLink
                 to="/"
                 onClick={() => {
-                  ScrolltoLogistics();
+                  ScrolltoProject();
                   toggle();
                 }}
               >
-                OVERSEAS LOGISTICS
+                Projects
               </StyledLink>
             </NavItem>
             <NavItem>
               <StyledLink
                 to="/"
                 onClick={() => {
-                  ScrolltoFinance();
                   toggle();
                 }}
               >
-                FINANCIAL TOOLS
+                Articles
               </StyledLink>
             </NavItem>
           </StyledNav>
@@ -140,18 +139,18 @@ export default function Header() {
         <LargeNav className="ml-auto">
           <StyledNav navbar>
             <StyledNavItem>
-              <StyledLink href="/"  rel="noreferrer" target="_blank">Skills</StyledLink>
+              <StyledLink onClick={() => {ScrolltoAbout()}}>About</StyledLink>
             </StyledNavItem>
             <StyledNavItem>
-              <StyledLink href="/"  rel="noreferrer" target="_blank">
+              <StyledLink onClick={() => {ScrolltoExperience()}}>
                 Experience
               </StyledLink>
             </StyledNavItem>
             <StyledNavItem>
-              <StyledLink href="/"  rel="noreferrer" target="_blank">Projects</StyledLink>
+              <StyledLink onClick={() => {ScrolltoProject()}}>Projects</StyledLink>
             </StyledNavItem>
             <StyledNavItem>
-              <StyledLink href="/"  rel="noreferrer" target="_blank">Articles</StyledLink>
+              <StyledLink to='#'>Articles</StyledLink>
             </StyledNavItem>
             <NavItem>
           <Resume href="/">
@@ -258,7 +257,7 @@ const StyledNavItem = styled(NavItem) `
 list-style-type: lower-roman;
 color:var(--royalBlue);
 `
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   color: white;
   line-height: 24px;
   padding-bottom: 8px;

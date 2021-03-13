@@ -6,10 +6,11 @@ export default function Footer() {
     <FooterWrapper>
       <Container>
         <FooterContainer>
+        <div>Designed by Oduwole Adeyinka</div>
           <div>
             Developed with <span>&#x2764;</span> by Bolaji Olayinka
           </div>
-          <div>Designed by Oduwole Adeyinka</div>
+          
         </FooterContainer>
       </Container>
     </FooterWrapper>

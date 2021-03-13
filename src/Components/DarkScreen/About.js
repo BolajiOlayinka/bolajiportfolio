@@ -20,11 +20,11 @@ const unDim = ()=>{
             <Wrapper>
                 <AboutBody>
                     Hello, My Name is Bolaji, My Friends call me B.j. Although i am based in Lagos (Nigeria), 
-                    My work isn't limited by space as i work with Teams across the world. 
+                    My work isn't limited by space and time as i work with Teams across the world in various time zones. 
                     <br/>
-                    I work on creating solutions using technologies off and on the internet. Although i have experience workign on the backend, 
-                    manipulating data, storing data, creating APIS, i enjoy more but creating what <span>U & I</span> see. 
-                    I have a knack for designs and you need to have me on your team for good UIs.
+                    I work on creating solutions using technologies off and on the web/mobile. Although i have experience working on the backend, 
+                    manipulating data, storing data, creating APIS, i enjoy more by creating what <span>U & I</span> see. 
+                    I have a knack for designs and you need to have me on your team to know that.
                     <br/>
                     I create pixel perfect, scalable and highly performant products. Here are technologies i use and i have used:<br/>
                      
@@ -40,12 +40,12 @@ const unDim = ()=>{
                         <li>Liquid</li>
                         <li>Express</li>
                         <li>Mongo DB</li>
-                       
+                        <li>React Native</li>
                         <li>Liquid</li>
-                        <li>Shopify</li>
+                        <li>Redux</li>
                         <li>Figma</li>
                         <li>Adobe XD</li>
-                        <li>Facebook SDK</li>
+                        <li className="experience">Facebook SDK</li>
                     </ul>
                     <SmallAboutPix>
                     <BackgroundTwo>

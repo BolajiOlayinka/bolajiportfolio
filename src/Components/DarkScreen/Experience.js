@@ -131,6 +131,7 @@ export default function Experience() {
             cardColor={cardFourColor}
             progressColor={progressFourColor}
             onClick={CardFourClick}
+            className="project"
           >
             <Name nameColor={nameFourColor}>Elta Solutions</Name>
             <PositionWrapper>
@@ -167,7 +168,7 @@ export default function Experience() {
             <ul>
                <li>Building Web Applications</li>
                <li>Building Pixel Perfect Front End Applications</li>
-               <li>Building Blockchain Technologies</li>
+               <li>Building Blockchain Applications</li>
                </ul>
               </RenderOne>
               </DetailsRender>
@@ -193,6 +194,7 @@ export default function Experience() {
             <RenderThree>
             <ul>               
             <li>Front End Application for Ecommerce / Logistics Platform</li>
+            <li>Creating Pages using Html and Css integrating them with Laravel</li>
             </ul>
 
               </RenderThree>
@@ -206,6 +208,7 @@ export default function Experience() {
             <RenderFour>
             <ul>
                <li>Building Various Client Websites across industries/sectors</li>
+               <li>UI/UX designs using Figma</li>
                </ul>
               </RenderFour>
               </DetailsRender>
