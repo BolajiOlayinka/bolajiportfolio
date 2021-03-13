@@ -6,9 +6,14 @@ import { Link } from "react-router-dom";
 import animateScrollTo from "animated-scroll-to";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import {faGithub, faInstagram, faLinkedin, faTwitter, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
-import CV from '../assets/resume.pdf'
-
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import CV from "../assets/resume.pdf";
 
 export default function Header() {
   const [background, setBackground] = useState("#010B30");
@@ -16,12 +21,10 @@ export default function Header() {
   const [fixed, setFixed] = useState("fixed");
   const [showIcon, setShowIcon] = useState(true);
   const [showItem, setShowItem] = useState(false);
-  
-  const ScrollToTop =()=>{
-    animateScrollTo(0);
-  }
 
-  
+  const ScrollToTop = () => {
+    animateScrollTo(0);
+  };
 
   const handleScroll = () => {
     if (window.pageYOffset > 0) {
@@ -56,7 +59,7 @@ export default function Header() {
   const ScrolltoProject = () => {
     animateScrollTo(document.querySelector(".project"));
   };
-  
+
   return (
     <NavWrapper background={background} boxshadow={boxshadow} fixed={fixed}>
       <StyledNavbar expand="md">
@@ -73,15 +76,37 @@ export default function Header() {
           </Link>
         </LogoContainer>
         <IconsContainer>
-        <a href="https://github.com/BolajiOlayinka" target="_blank" rel="noreferrer">
-        <StyledIcon icon={faGithub}/>
-        </a>
-       <a href="https://wa.link/8r8qy7" target="_blank" rel="noreferrer"><StyledIcon icon={faWhatsapp}/></a>
-       <a href="https://www.instagram.com/artbolajiolayinka/" target="_blank" rel="noreferrer"><StyledIcon icon={faInstagram}/></a>
-       <a href="https://twitter.com/Hewalewa" target="_blank" rel="noreferrer"><StyledIcon icon={faTwitter}/></a>
-       <a href="https://www.linkedin.com/in/bolaji-olayinka-1309aa95/" target="_blank" rel="noreferrer"><StyledIcon icon={faLinkedin}/></a>
-        
-
+          <a
+            href="https://github.com/BolajiOlayinka"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <StyledIcon icon={faGithub} />
+          </a>
+          <a href="https://wa.link/8r8qy7" target="_blank" rel="noreferrer">
+            <StyledIcon icon={faWhatsapp} />
+          </a>
+          <a
+            href="https://www.instagram.com/artbolajiolayinka/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <StyledIcon icon={faInstagram} />
+          </a>
+          <a
+            href="https://twitter.com/Hewalewa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <StyledIcon icon={faTwitter} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/bolaji-olayinka-1309aa95/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <StyledIcon icon={faLinkedin} />
+          </a>
         </IconsContainer>
         {showItem && (
           <StyledNav navbar>
@@ -140,26 +165,41 @@ export default function Header() {
         <LargeNav className="ml-auto">
           <StyledNav navbar>
             <StyledNavItem>
-              <StyledLink onClick={() => {ScrolltoAbout()}}>About</StyledLink>
+              <StyledLink
+                onClick={() => {
+                  ScrolltoAbout();
+                }}
+              >
+                About
+              </StyledLink>
             </StyledNavItem>
             <StyledNavItem>
-              <StyledLink onClick={() => {ScrolltoExperience()}}>
+              <StyledLink
+                onClick={() => {
+                  ScrolltoExperience();
+                }}
+              >
                 Experience
               </StyledLink>
             </StyledNavItem>
             <StyledNavItem>
-              <StyledLink onClick={() => {ScrolltoProject()}}>Projects</StyledLink>
+              <StyledLink
+                onClick={() => {
+                  ScrolltoProject();
+                }}
+              >
+                Projects
+              </StyledLink>
             </StyledNavItem>
             <StyledNavItem>
-              <StyledLink to='#'>Articles</StyledLink>
+              <StyledLink to="#">Articles</StyledLink>
             </StyledNavItem>
             <NavItem>
-          <Resume href={CV} download="resume.pdf">
-          Resume        
-          </Resume>
-          </NavItem>
+              <Resume href={CV} download="resume.pdf">
+                Resume
+              </Resume>
+            </NavItem>
           </StyledNav>
-         
         </LargeNav>
       </StyledNavbar>
     </NavWrapper>
@@ -186,28 +226,26 @@ const NavWrapper = styled.div`
   }
 `;
 const LogoContainer = styled.div`
-
   img {
     width: 50px;
     height: 50px;
-    border-radius:50%;
-    box-shadow:0 0 5px rgb(41, 0, 255);
-  } 
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(41, 0, 255);
+  }
   @media (max-width: 576px) {
     z-index: 2;
   }
 `;
-const IconsContainer = styled.div `
-display:flex;
-width:140px;
-justify-content:space-around;
-margin-left:15px;
-`
-const StyledIcon= styled(FontAwesomeIcon) `
-color:var(--royalBlue);
-font-size:16px;
-
-`
+const IconsContainer = styled.div`
+  display: flex;
+  width: 140px;
+  justify-content: space-around;
+  margin-left: 15px;
+`;
+const StyledIcon = styled(FontAwesomeIcon)`
+  color: var(--royalBlue);
+  font-size: 16px;
+`;
 const StyledNav = styled(Nav)`
   margin: auto;
   @media (max-width: 767.9px) {
@@ -251,17 +289,17 @@ const StyledNavbar = styled(Navbar)`
     padding-right: 30px;
   }
 `;
-const StyledNavItem = styled(NavItem) `
-list-style-type: lower-roman;
-color:var(--royalBlue);
-`
+const StyledNavItem = styled(NavItem)`
+  list-style-type: lower-roman;
+  color: var(--royalBlue);
+`;
 const StyledLink = styled(Link)`
   color: white;
   line-height: 24px;
   padding-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
-  padding-left:3px;
+  padding-left: 3px;
   margin-right: 38px;
   :hover {
     color: var(--mainGreen);
@@ -295,11 +333,11 @@ const StyledLink = styled(Link)`
   }
 `;
 const Resume = styled.a`
-color:var(--royalBlue);
-border:1px solid var(--royalBlue);
-background:transparent;
-padding:5px 10px;
-`
+  color: var(--royalBlue);
+  border: 1px solid var(--royalBlue);
+  background: transparent;
+  padding: 5px 10px;
+`;
 
 const LargeNav = styled.div`
   @media (max-width: 767.9px) {

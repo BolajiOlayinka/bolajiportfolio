@@ -8,7 +8,7 @@ export default function Footer() {
         <FooterContainer>
         <div>Designed by Oduwole Adeyinka</div>
           <div>
-            Developed with <span>&#x2764;</span> by Bolaji Olayinka
+            Developed using React by Bolaji Olayinka
           </div>
           
         </FooterContainer>
