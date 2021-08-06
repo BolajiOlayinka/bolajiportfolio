@@ -19,7 +19,7 @@ export default function Banner() {
               in between, While i try to build things, sometimes i break things
               also, but overall I BUILD.
             </PostHeader>
-            <Contact href="/" className="about">
+            <Contact href="mailto:bolajiolayinka980@gmail.com?body=My custom mail body" className="about">
               Contact Me
               <FontAwesomeIcon icon={faEnvelope} />
             </Contact>
@@ -121,7 +121,7 @@ const Contact = styled.a`
   color: white;
   font-size: 16px;
   border: 1px solid var(--royalBlue);
-  padding: 5px 15px;
+  padding: 5px 30px;
   width: 200px;
   height: 60px;
   border-radius: 4px;
@@ -134,7 +134,7 @@ const Contact = styled.a`
     text-decoration: none;
   }
   @media (max-width: 426px) {
-    width: 140px;
+    width: 180px;
     height: 40px;
     font-size: 14px;
   }

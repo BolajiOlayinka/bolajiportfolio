@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Standage from '../../assets/Standage.png';
+// import Standage from '../../assets/Standage.png';
 import Nodomaru from '../../assets/Nodomaru.png';
+import Freeki from '../../assets/Freeki.png';
+import Logilab from '../../assets/Logilab.png';
 import Digitrad from '../../assets/Digitrad.png';
 import Content from '../../assets/Content.png';
 import BG from '../../assets/bg.png';
@@ -11,18 +13,45 @@ export default function Projects() {
         
        <ProjectsWrapper>
        <Container>
-       
+       <ProjectTwo>
+        <LargeLeftTwo>
+        <LeftTwo>
+        <ProjectNameTwo href="https://freeki.com/">Nodomaru Official Website</ProjectNameTwo>
+        <img src={Content} alt="Background"/>
+        <TextContentTwo>Freeki is an e-commerce company that carries out freights/import and exports among countries.
+                    It is built to be highly performant using Html, Css and Javscript.</TextContentTwo>
+            </LeftTwo>
+            </LargeLeftTwo>
+            
+            
+            <RightTwo>
+                <a href="https://freeki.com/">
+                <img src={Freeki} alt="Nodomaru Website"/>
+                </a>
+            </RightTwo>
+            <SmallLeftTwo>
+            <LeftTwo>
+            <ProjectNameTwo href="https://logilab.world/">Nodomaru Official Website</ProjectNameTwo>
+        <img src={Content} alt="Background"/>
+        <TextContentTwo> Logilab is a japanese logistics company, it is in partnership with Mitsuibishi Logistics to carry out its Logistics operations.
+            Built with React,Context Api and Wordpress Api
+            
+        </TextContentTwo>
+                </LeftTwo>
+            </SmallLeftTwo>
+        </ProjectTwo>
         <ProjectOne>
             <LeftOne>
-            <a href="https://standagelp.netlify.app/">
-                <img src={Standage} alt="Standage Website"/>
+            <a href="https://logilab.world/">
+                <img src={Logilab} alt="Logilab"/>
                 </a>
             </LeftOne>
             <RightOne>
                 <ProjectName href="/">Standage Official Website</ProjectName>
                 <img src={Content} alt="Background"/>
-                <TextContent> This official website is targeted towards Brand awareness and Brand recorgnition across countries. It aims to elaborate on the company's 
-                    products and services. </TextContent>
+                <TextContent> Logilab is a japanese logistics company, it is in partnership with Mitsuibishi Logistics to carry out its Logistics operations.
+            Built with React,Context Api and Wordpress Api
+                </TextContent>
             </RightOne>
         </ProjectOne>
 
@@ -59,7 +88,8 @@ export default function Projects() {
             <RightOne>
             <ProjectName href="https://digitrad.world/">Digitrad Official Website</ProjectName>
                 <img src={Content} alt="Background"/>
-                <TextContent>  Aims to facilitate Cross border trades and transactions. It has an in-built fiat and cryptocurrency calculator. It is also the landing page of the <a href="https://app.digitrad.world/">Digitrad</a> a cryptocurrency e-commerce website</TextContent>
+                <TextContent>  Digitrad is a trading, logistics and payment platform. 
+                    It carries out transactions using cryptocurrencies.It has a marketplace <a href="https://app.digitrad.world/">Digitrad</a> ( a cryptocurrency B2B e-commerce website)</TextContent>
             </RightOne>
             
         </ProjectThree>

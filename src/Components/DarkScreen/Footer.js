@@ -6,9 +6,9 @@ export default function Footer() {
     <FooterWrapper>
       <Container>
         <FooterContainer>
-        <div>Designed by Oduwole Adeyinka</div>
+        <div>UI/UX design by Oduwole Adeyinka</div>
           <div>
-            Developed using React by Bolaji Olayinka
+            A React Project by Bolaji Olayinka
           </div>
           
         </FooterContainer>

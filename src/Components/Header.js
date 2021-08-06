@@ -192,7 +192,8 @@ export default function Header() {
               </StyledLink>
             </StyledNavItem>
             <StyledNavItem>
-              <StyledLink to="#">Articles</StyledLink>
+              <MediumLink href="https://medium.com/@bolajiolayinka980"  target="_blank"
+            rel="noreferrer">Articles</MediumLink>
             </StyledNavItem>
             <NavItem>
               <Resume href={CV} download="resume.pdf">
@@ -294,6 +295,45 @@ const StyledNavItem = styled(NavItem)`
   color: var(--royalBlue);
 `;
 const StyledLink = styled(Link)`
+  color: white;
+  line-height: 24px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 3px;
+  margin-right: 38px;
+  :hover {
+    color: var(--mainGreen);
+    cursor: pointer;
+    text-decoration: none;
+
+    border-bottom: 2px solid var(--mainGreen);
+  }
+  :active {
+    color: var(--mainGreen);
+    border-bottom: 2px solid var(--mainGreen);
+    transition: border-bottom 0.5s ease-in;
+  }
+
+  @media (max-width: 735px) {
+    font-size: 12px;
+    margin-right: 40px;
+  }
+  @media (max-width: 767.9px) {
+    font-size: 13px;
+    line-height: 32px;
+    padding-left: 0.5em;
+    :hover {
+      border-bottom: 0px;
+    }
+    :active {
+      border-bottom-color: transparent !important;
+      border-bottom-style: none !important;
+      border-bottom-width: 0 !important;
+    }
+  }
+`;
+const MediumLink = styled.a`
   color: white;
   line-height: 24px;
   padding-bottom: 8px;
