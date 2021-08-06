@@ -18,7 +18,7 @@ export default function Projects() {
         <LeftTwo>
         <ProjectNameTwo href="https://freeki.com/">Nodomaru Official Website</ProjectNameTwo>
         <img src={Content} alt="Background"/>
-        <TextContentTwo>Freeki is an e-commerce company that carries out freights/import and exports among countries.
+        <TextContentTwo>Freeki is an e-commerce company that carries out freight(import/export) among countries.
                     It is built to be highly performant using Html, Css and Javscript.</TextContentTwo>
             </LeftTwo>
             </LargeLeftTwo>
@@ -33,8 +33,8 @@ export default function Projects() {
             <LeftTwo>
             <ProjectNameTwo href="https://logilab.world/">Nodomaru Official Website</ProjectNameTwo>
         <img src={Content} alt="Background"/>
-        <TextContentTwo> Logilab is a japanese logistics company, it is in partnership with Mitsuibishi Logistics to carry out its Logistics operations.
-            Built with React,Context Api and Wordpress Api
+        <TextContentTwo>Freeki is an e-commerce company that carries out freight(import/export) among countries.
+                    It is built to be highly performant using Html, Css and Javscript.
             
         </TextContentTwo>
                 </LeftTwo>
